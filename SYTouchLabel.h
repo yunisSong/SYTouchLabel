@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#define SY_WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+
 NS_ASSUME_NONNULL_BEGIN
 /*
  

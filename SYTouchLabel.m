@@ -133,7 +133,7 @@
     NSUInteger characterIndex = [self characterIndexAtPoint:location];
     if (characterIndex < self.attributedText.length) {
         NSRange range = NSMakeRange(characterIndex, 1);
-        WS(weakSelf);
+        SY_WS(weakSelf);
         [selectRangeArray enumerateObjectsUsingBlock:^(NSValue *obj, NSUInteger idx, BOOL * _Nonnull stop) {
             NSRange s_range = obj.rangeValue;
             if (s_range.location <= range.location && s_range.location + s_range.length >= range.location + range.length) {
@@ -149,7 +149,7 @@
 {
     if (self.isHighLighted)
     {
-        WS(weakSelf);
+        SY_WS(weakSelf);
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.08 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             weakSelf.isHighLighted= NO;
             [weakSelf layoutSubviews];
