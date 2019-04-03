@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { "Yunis" => "332963965@qq.com" }
   s.source       = { :git => "https://github.com/yunisSong/SYTouchLabel.git" }
   s.source_files = "*.{h,m}"
-  s.ios.deployment_target = '6.0'
+  s.ios.deployment_target = '7.0'
   s.requires_arc = true
 
 end
