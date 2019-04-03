@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SYTouchLabel"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "轻量级可点击 Label"
   s.description  = "轻量级可点击 Label"
   s.homepage     = "https://github.com/yunisSong/SYTouchLabel"
